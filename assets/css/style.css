@@ -28,3 +28,22 @@ body {
     transition: transform .20s linear;
 }
 
+h2 {
+    text-align: center; /* Centra el texto horizontalmente */
+    font-family: "Arial", sans-serif; /* Aplica una fuente estilizada */
+}
+h1 {
+    font-size: 10vw;
+}
+
+p {
+    font-size: 2vw;
+}
+
+h2 {
+    font-size: 4vw;
+}
+
+h3 {
+    font-size: 3vw;
+}
