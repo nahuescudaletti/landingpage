@@ -1,5 +1,5 @@
 .card-container {
-    max-width: 30%; /* Ajusta el tamaño deseado */
+    max-width: 40%; /* Ajusta el tamaño deseado */
 }
 body {
     background-image: url("../img/fondofooter.jpg");
@@ -18,3 +18,13 @@ body {
     max-width: 100%;
     max-height: 100%;
 }
+
+.cardtn{
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+.card-itemtn{
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.002);
+    transition: transform .20s linear;
+}
+
