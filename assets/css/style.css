@@ -7,6 +7,7 @@ body {
     background-size: cover;
     background-position: center;
     color: white;
+    overflow-x: hidden;
 }
 
 
@@ -27,14 +28,17 @@ h1 {
 
 p {
     font-size: 2vw;
+    font-family: 'Roboto', sans-serif;
 }
 
 h2 {
     font-size: 4vw;
+    font-family: 'Roboto', sans-serif;
 }
 
 h3 {
     font-size: 3vw;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Media Query para pantallas grandes (lg) */
@@ -54,6 +58,10 @@ h3 {
     h3 {
         font-size: 2vw; /* Ajusta el tamaño deseado para pantallas grandes */
     }
+    h4{
+      font-size: 1.5vw;
+      font-family: 'Roboto', sans-serif;
+    }
 }
 
 .this {
@@ -65,9 +73,7 @@ h3 {
     letter-spacing: 0.15em; /* Ajusta el valor según lo deseado */
     font-weight: 550; /* Puedes ajustar el valor según lo deseado (por ejemplo, '600' o '700') */
   }
-.videoa{
-    margin-left: 3rem;
-}
+
 .button {
     --color: #1FD0E8;
     padding: 0.8em 1.6em;
