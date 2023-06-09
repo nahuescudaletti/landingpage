@@ -68,3 +68,82 @@ h3 {
 .videoa{
     margin-left: 3rem;
 }
+.button {
+    --color: #1FD0E8;
+    padding: 0.8em 1.6em;
+    background-color: transparent;
+    border-radius: 0.3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: 400;
+    font-size: 1rem;
+    border: 0.2em solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+  }
+  
+  .button::before,
+  .button::after {
+    content: '';
+    display: block;
+    width: 20%;
+    padding-top: 20%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 1s ease;
+  }
+  
+  .button::before {
+    top: -15%;
+    left: -15%;
+  }
+  
+  .button::after {
+    left: calc(100% + 15%);
+    top: calc(100% + 15%);
+  }
+  
+  .button:hover::before,
+  .button:hover::after {
+    height: 300%;
+    width: 300%;
+  }
+  
+  .button:hover {
+    color: rgb(10, 25, 30);
+  }
+  
+  .button:active {
+    filter: brightness(0.8);
+  }
+  
+  @media (max-width: 480px) {
+    .button {
+      padding: 0.6em 1.2em;
+      font-size: 0.8rem;
+    }
+    
+    .button::before,
+    .button::after {
+      width: 30%;
+      padding-top: 30%;
+    }
+    
+    .button::before {
+      top: -20%;
+      left: -20%;
+    }
+    
+    .button::after {
+      left: calc(100% + 20%);
+      top: calc(100% + 20%);
+    }
+  }
+  
