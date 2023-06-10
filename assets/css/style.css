@@ -2,13 +2,6 @@
     max-width: 40%; /* Ajusta el tamaño deseado */
 }
 
-.logo-img {
-  max-width: 6%;
-  height: auto;
-  vertical-align: middle;
-}
-
-
 body {
     background-image: url("../img/fondofooter.jpg");
     background-size: cover;
@@ -16,6 +9,7 @@ body {
     color: white;
     overflow-x: hidden;
 }
+
 
 
 
